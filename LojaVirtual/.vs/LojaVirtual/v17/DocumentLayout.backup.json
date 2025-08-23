@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\asp net\\sesao07\\lojavirtual\\lojavirtual\\views\\produto\\visualizar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\views\\produto\\visualizar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\asp net\\sesao07\\lojavirtual\\lojavirtual\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\asp net\\sesao07\\lojavirtual\\lojavirtual\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\asp net\\sesao07\\lojavirtual\\lojavirtual\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\asp net\\sesao07\\lojavirtual\\lojavirtual\\wwwroot\\paginas\\contato.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\wwwroot\\paginas\\contato.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\asp net\\sesao07\\lojavirtual\\lojavirtual\\wwwroot\\paginas\\detalhe.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\wwwroot\\paginas\\detalhe.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\asp net\\sesao07\\lojavirtual\\lojavirtual\\wwwroot\\paginas\\carrinho.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\wwwroot\\paginas\\carrinho.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\asp net\\sesao07\\lojavirtual\\lojavirtual\\wwwroot\\paginas\\cadastro.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\wwwroot\\paginas\\cadastro.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\asp net\\sesao07\\lojavirtual\\lojavirtual\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\Controllers\\ProdutoController.cs",
+              "RelativeDocumentMoniker": "LojaVirtual\\Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\Controllers\\ProdutoController.cs",
+              "RelativeToolTip": "LojaVirtual\\Controllers\\ProdutoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T21:01:34.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "detalhe.html",
+              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\wwwroot\\paginas\\detalhe.html",
+              "RelativeDocumentMoniker": "LojaVirtual\\wwwroot\\paginas\\detalhe.html",
+              "ToolTip": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\wwwroot\\paginas\\detalhe.html",
+              "RelativeToolTip": "LojaVirtual\\wwwroot\\paginas\\detalhe.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-23T20:43:53.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "carrinho.html",
+              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\wwwroot\\paginas\\carrinho.html",
+              "RelativeDocumentMoniker": "LojaVirtual\\wwwroot\\paginas\\carrinho.html",
+              "ToolTip": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\wwwroot\\paginas\\carrinho.html",
+              "RelativeToolTip": "LojaVirtual\\wwwroot\\paginas\\carrinho.html",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-23T20:43:44.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Visualizar.cshtml",
+              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\Views\\Produto\\Visualizar.cshtml",
+              "RelativeDocumentMoniker": "LojaVirtual\\Views\\Produto\\Visualizar.cshtml",
+              "ToolTip": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\Views\\Produto\\Visualizar.cshtml",
+              "RelativeToolTip": "LojaVirtual\\Views\\Produto\\Visualizar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-23T21:15:19.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "LojaVirtual\\Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\Models\\Produto.cs",
+              "RelativeToolTip": "LojaVirtual\\Models\\Produto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T21:14:50.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "contato.html",
+              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\wwwroot\\paginas\\contato.html",
+              "RelativeDocumentMoniker": "LojaVirtual\\wwwroot\\paginas\\contato.html",
+              "ToolTip": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\wwwroot\\paginas\\contato.html",
+              "RelativeToolTip": "LojaVirtual\\wwwroot\\paginas\\contato.html",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-23T20:43:54.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\Program.cs",
+              "RelativeDocumentMoniker": "LojaVirtual\\Program.cs",
+              "ToolTip": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\Program.cs",
+              "RelativeToolTip": "LojaVirtual\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T20:19:42.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "cadastro.html",
+              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\wwwroot\\paginas\\cadastro.html",
+              "RelativeDocumentMoniker": "LojaVirtual\\wwwroot\\paginas\\cadastro.html",
+              "ToolTip": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\wwwroot\\paginas\\cadastro.html",
+              "RelativeToolTip": "LojaVirtual\\wwwroot\\paginas\\cadastro.html",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-23T20:43:25.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\appsettings.json",
+              "RelativeDocumentMoniker": "LojaVirtual\\appsettings.json",
+              "ToolTip": "C:\\Users\\henry\\Desktop\\Asp Net\\Sesao07\\LojaVirtual\\LojaVirtual\\appsettings.json",
+              "RelativeToolTip": "LojaVirtual\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-23T20:41:14.731Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
