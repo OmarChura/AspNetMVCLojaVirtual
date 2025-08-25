@@ -481,3 +481,4 @@ wwwroot\resources\lib\feather\feather.js
 wwwroot\resources\lib\holder\holder.min.js
 wwwroot\resources\lib\jquery3.3.1\jquery-3.3.1.min.js
 wwwroot\resources\lib\popper1.14.6\popper.min.js
+wwwroot\css\StyleSheet.css

@@ -3,16 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/LojaVirtual/True/SqlTable/dbo.NewletterEmails.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\aspnetmvclojavirtual\\lojavirtual\\lojavirtual\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\aspnetmvclojavirtual\\lojavirtual\\lojavirtual\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\aspnetmvclojavirtual\\lojavirtual\\lojavirtual\\views\\home\\contato.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\views\\home\\contato.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +22,24 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "LojaVirtual\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "LojaVirtual\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T19:19:58.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Contato.cshtml",
-              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Views\\Home\\Contato.cshtml",
-              "RelativeDocumentMoniker": "LojaVirtual\\Views\\Home\\Contato.cshtml",
-              "ToolTip": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Views\\Home\\Contato.cshtml",
-              "RelativeToolTip": "LojaVirtual\\Views\\Home\\Contato.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-24T18:44:52.093Z",
+              "Title": "dbo.NewletterEmails [Dados]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/LojaVirtual/True/SqlTable/dbo.NewletterEmails.sql",
+              "ToolTip": "dbo.NewletterEmails [Dados]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-08-25T00:24:13.507Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "LojaVirtual\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "LojaVirtual\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAALQAAAAAAAAAAAAAAMwAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-24T18:44:05.607Z",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LojaVirtual\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LojaVirtual\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T19:19:58.974Z",
               "EditorCaption": ""
             }
           ]

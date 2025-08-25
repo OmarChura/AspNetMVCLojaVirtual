@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\aspnetmvclojavirtual\\lojavirtual\\lojavirtual\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\aspnetmvclojavirtual\\lojavirtual\\lojavirtual\\views\\home\\contato.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\views\\home\\contato.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\aspnetmvclojavirtual\\lojavirtual\\lojavirtual\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -22,45 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "LojaVirtual\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Controllers\\HomeController.cs",
               "RelativeToolTip": "LojaVirtual\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-24T19:19:58.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Contato.cshtml",
-              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Views\\Home\\Contato.cshtml",
-              "RelativeDocumentMoniker": "LojaVirtual\\Views\\Home\\Contato.cshtml",
-              "ToolTip": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Views\\Home\\Contato.cshtml",
-              "RelativeToolTip": "LojaVirtual\\Views\\Home\\Contato.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-24T18:44:52.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "LojaVirtual\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Views\\Home\\Index.cshtml*",
-              "RelativeToolTip": "LojaVirtual\\Views\\Home\\Index.cshtml*",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAAAMwAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-24T18:44:05.607Z",
               "EditorCaption": ""
             }
           ]

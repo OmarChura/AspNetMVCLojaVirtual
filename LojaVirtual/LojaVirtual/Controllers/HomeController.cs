@@ -1,6 +1,7 @@
 ﻿using LojaVirtual.Database;
 using LojaVirtual.Libraries.Email;
 using LojaVirtual.Models;
+using LojaVirtual.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
@@ -9,11 +10,13 @@ namespace LojaVirtual.Controllers
 {
     public class HomeController : Controller
     {
-        private LojaVirtualContext _banco;
+        private IClienteRepository _repositoryCliente;
+        private INewsletterRepository _newsletterRepository;
 
-        public HomeController(LojaVirtualContext banco)
+        public HomeController(IClienteRepository repository, INewsletterRepository newsletterRepository)
         {
-            _banco = banco;
+            _repositoryCliente = repository;
+            _newsletterRepository = newsletterRepository;
         }
         [HttpGet]
         public IActionResult Index()
@@ -27,11 +30,13 @@ namespace LojaVirtual.Controllers
             if (ModelState.IsValid) 
             {
                 //TODO - Adição no banco de dados
+                _newsletterRepository.Cadastrar(newletterEmail);
+                /*
                 _banco.NewletterEmails.Add(newletterEmail);
                 _banco.SaveChanges();
-
+                */
                 TempData["MSG_S"] = "E-mail cadastrado! ";
-
+                
                 return RedirectToAction(nameof(Index));
             }
             else
@@ -80,7 +85,7 @@ namespace LojaVirtual.Controllers
             }
             catch(Exception ex)  
             {
-                ViewData["MSG_E"] = "OPps! tivemos um erro, tente novamente mais tartde!";
+                ViewData["MSG_E"] = "Opps! tivemos um erro, tente novamente mais tartde!";
 
                 //TODO - Implementar Log
             }
@@ -93,9 +98,25 @@ namespace LojaVirtual.Controllers
         {
             return View();
         }
-
+        [HttpGet]
         public IActionResult CadastroCliente()
         {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult CadastroCliente([FromForm]Cliente cliente)
+        {
+            if (ModelState.IsValid)
+            {
+                //TODO - Grava no banco
+                _repositoryCliente.Cadastrar(cliente);
+
+                TempData["MSG_S"] = "cadastro realizado com sucesso!";
+
+                //TODO - implementar redirecionamentos diferentes (painel, carrinho de compras, etc)
+                return RedirectToAction(nameof(CadastroCliente));
+            }
+
             return View();
         }
 
