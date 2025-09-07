@@ -1,4 +1,5 @@
 ﻿using LojaVirtual.Database;
+using LojaVirtual.Libraries;
 using LojaVirtual.Libraries.Email;
 using LojaVirtual.Models;
 using LojaVirtual.Repositories.Interfaces;
@@ -12,11 +13,13 @@ namespace LojaVirtual.Controllers
     {
         private IClienteRepository _repositoryCliente;
         private INewsletterRepository _newsletterRepository;
+        private LoginCliente _loginCliente;
 
-        public HomeController(IClienteRepository repository, INewsletterRepository newsletterRepository)
+        public HomeController(IClienteRepository repository, INewsletterRepository newsletterRepository, LoginCliente loginCliente)
         {
             _repositoryCliente = repository;
             _newsletterRepository = newsletterRepository;
+            _loginCliente = loginCliente;
         }
         [HttpGet]
         public IActionResult Index()
@@ -94,10 +97,69 @@ namespace LojaVirtual.Controllers
             return View("Contato");
         }
 
+        [HttpGet]
         public IActionResult Login()
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Login([FromForm]Cliente cliente)
+        {
+            Cliente clienteDB = _repositoryCliente.Login(cliente.Email, cliente.Senha);
+            if(clienteDB != null)
+            {
+                _loginCliente.Login(clienteDB);
+
+                return new RedirectResult(Url.Action(nameof(Painel)));
+            }
+            else
+            {
+                ViewData["MSG_E"] = "Usuário não encontrado, e-mail ou senha incorreta";
+                return View();
+            }
+            /*if(cliente.Email == "1234@1234" && cliente.Senha == "1234")
+            {
+                //fazer consulta banco de dados email,senha
+                //armazenar essa sesao, na sessao(cliente)
+                HttpContext.Session.Set("ID", new byte[] { 51 });
+                HttpContext.Session.SetString("email", cliente.Email);
+                HttpContext.Session.SetInt32("CPF", 12345498);
+                return new ContentResult() { Content="logado"};
+                //return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return new ContentResult() { Content = "nao logado" };
+            }*/
+        }
+
+        [HttpGet]
+        public IActionResult Painel()
+        {
+            Cliente cliente = _loginCliente.GetCliente();
+            if(cliente != null)
+            {
+                return new ContentResult() { Content = "acesso concedido " + cliente.Id + ". email: " + cliente.Email };
+            }
+            else
+            {
+                return new ContentResult() { Content = "acesso negado" };
+            }
+
+
+            /*
+            byte[] UsuarioId;
+            if(HttpContext.Session.TryGetValue("ID", out UsuarioId))
+            {
+                return new ContentResult() { Content = "acesso concedido" + UsuarioId[0] + ". email" + HttpContext.Session.GetString("email") };
+            }
+            else
+            {
+                return new ContentResult() { Content = "acesso negado" };
+            }*/
+
+        }
+
         [HttpGet]
         public IActionResult CadastroCliente()
         {

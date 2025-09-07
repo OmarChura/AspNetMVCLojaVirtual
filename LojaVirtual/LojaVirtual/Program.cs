@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore.SqlServer;
 using Microsoft.EntityFrameworkCore;
 using LojaVirtual.Repositories;
 using LojaVirtual.Repositories.Interfaces;
+using LojaVirtual.Libraries.Sessao;
+using LojaVirtual.Libraries;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,8 +13,20 @@ builder.Services.AddRazorPages();
 
 /* padrao repository 
  */
+
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<INewsletterRepository, NewsletterRepository>();
+
+//session - configuracao
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddMemoryCache();  //guardar os dados na memoria
+builder.Services.AddSession(options =>
+{
+   
+});
+builder.Services.AddScoped<Sessao>();
+builder.Services.AddScoped<LoginCliente>();
 
 string connection = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=LojaVirtual;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
@@ -31,6 +45,8 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseDefaultFiles();
 app.UseStaticFiles();
+
+app.UseSession();
 
 app.UseRouting();
 

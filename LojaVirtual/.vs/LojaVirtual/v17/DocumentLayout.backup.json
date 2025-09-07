@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\aspnetmvclojavirtual\\lojavirtual\\lojavirtual\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\aspnetmvclojavirtual\\lojavirtual\\lojavirtual\\libraries\\logincliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\libraries\\logincliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\aspnetmvclojavirtual\\lojavirtual\\lojavirtual\\repositories\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\repositories\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|c:\\users\\henry\\desktop\\aspnetmvclojavirtual\\lojavirtual\\lojavirtual\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E2EE4CE-ED43-49BF-B23B-406D75F83F53}|LojaVirtual\\LojaVirtual.csproj|solutionrelative:lojavirtual\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClienteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Repositories\\ClienteRepository.cs",
+              "RelativeDocumentMoniker": "LojaVirtual\\Repositories\\ClienteRepository.cs",
+              "ToolTip": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Repositories\\ClienteRepository.cs*",
+              "RelativeToolTip": "LojaVirtual\\Repositories\\ClienteRepository.cs*",
+              "ViewState": "AgIAABUAAAAAAAAAAADgvx8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:08:09.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginCliente.cs",
+              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Libraries\\LoginCliente.cs",
+              "RelativeDocumentMoniker": "LojaVirtual\\Libraries\\LoginCliente.cs",
+              "ToolTip": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Libraries\\LoginCliente.cs",
+              "RelativeToolTip": "LojaVirtual\\Libraries\\LoginCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:06:39.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "LojaVirtual\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "LojaVirtual\\Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-07T18:53:37.92Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "LojaVirtual\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "LojaVirtual\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB0AAAAkAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\henry\\Desktop\\AspNetMVCLojaVirtual\\LojaVirtual\\LojaVirtual\\Controllers\\HomeController.cs*",
+              "RelativeToolTip": "LojaVirtual\\Controllers\\HomeController.cs*",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAswI0AAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-24T19:19:58.974Z",
               "EditorCaption": ""
