@@ -1,10 +1,11 @@
 using LojaVirtual.Database;
-using Microsoft.EntityFrameworkCore.SqlServer;
-using Microsoft.EntityFrameworkCore;
+using LojaVirtual.Libraries.Login;
+using LojaVirtual.Libraries.Sessao;
 using LojaVirtual.Repositories;
 using LojaVirtual.Repositories.Interfaces;
-using LojaVirtual.Libraries.Sessao;
-using LojaVirtual.Libraries;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,8 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<INewsletterRepository, NewsletterRepository>();
+builder.Services.AddScoped<IColaboradorRepository, ColaboradorRepository>();
+builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 
 //session - configuracao
 builder.Services.AddHttpContextAccessor();
@@ -27,10 +30,13 @@ builder.Services.AddSession(options =>
 });
 builder.Services.AddScoped<Sessao>();
 builder.Services.AddScoped<LoginCliente>();
+builder.Services.AddScoped<LoginColaborador>();
 
 string connection = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=LojaVirtual;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
 builder.Services.AddDbContext<LojaVirtualContext>(options => options.UseSqlServer(connection));
+
+//builder.Services.AddSession(options => { options.Cookie.IsEssential = true; });
 
 var app = builder.Build();
 
@@ -54,8 +60,26 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+      name : "areas",
+      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
+    endpoints.MapControllerRoute(
+      name: "default",
+      pattern: "{controller=Home}/{action=Index}/{id?}"
+    );
+});/*
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}"
+    );
+app.MapControllerRoute(
+    name: "Areas",
+      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );*/
+
+
 
 app.Run();

@@ -1,0 +1,3 @@
+X.PagedList --- biblioteca de paginação
+
+//instalar newtonsoft.json

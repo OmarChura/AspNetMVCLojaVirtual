@@ -2,7 +2,7 @@
 using LojaVirtual.Models;
 using Newtonsoft.Json;
 
-namespace LojaVirtual.Libraries
+namespace LojaVirtual.Libraries.Login
 {
     public class LoginCliente
     {

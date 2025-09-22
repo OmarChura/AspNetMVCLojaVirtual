@@ -22,6 +22,32 @@ namespace LojaVirtual.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("LojaVirtual.Models.Categoria", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("CategoriaPaiId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Slug")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoriaPaiId");
+
+                    b.ToTable("Categorias");
+                });
+
             modelBuilder.Entity("LojaVirtual.Models.Cliente", b =>
                 {
                     b.Property<int>("Id")
@@ -62,6 +88,35 @@ namespace LojaVirtual.Migrations
                     b.ToTable("Clientes");
                 });
 
+            modelBuilder.Entity("LojaVirtual.Models.Colaborador", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Senha")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Tipo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Colaboradores");
+                });
+
             modelBuilder.Entity("LojaVirtual.Models.NewletterEmail", b =>
                 {
                     b.Property<int>("Id")
@@ -77,6 +132,15 @@ namespace LojaVirtual.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("NewletterEmails");
+                });
+
+            modelBuilder.Entity("LojaVirtual.Models.Categoria", b =>
+                {
+                    b.HasOne("LojaVirtual.Models.Categoria", "CategoriaPai")
+                        .WithMany()
+                        .HasForeignKey("CategoriaPaiId");
+
+                    b.Navigation("CategoriaPai");
                 });
 #pragma warning restore 612, 618
         }
