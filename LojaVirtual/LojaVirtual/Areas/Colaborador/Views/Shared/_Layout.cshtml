@@ -1,4 +1,4 @@
-﻿
+﻿@inject LojaVirtual.Libraries.Login.LoginColaborador colaborador;
 
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
@@ -176,8 +176,20 @@
                                     Produtos
                                 </a>
                             </li>
+                            @if(colaborador.GetColaborador().Tipo == "G")
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex align-items-center gap-2" asp-controller="Colaborador" asp-action="Index">
+                                        <svg class="bi" aria-hidden="true" width="30px" height="30px">
+                                            <use xlink:href="#file-earmark"></use>
+                                        </svg>
+                                        Colaborador
+                                    </a>
+                                </li>
+                            }
+                            
                             <li class="nav-item">
-                                <a class="nav-link d-flex align-items-center gap-2" href="#">
+                                <a class="nav-link d-flex align-items-center gap-2" asp-controller="" asp-action="">
                                     <svg class="bi" aria-hidden="true" width="30px" height="30px">
                                         <use xlink:href="#file-earmark"></use>
                                     </svg>

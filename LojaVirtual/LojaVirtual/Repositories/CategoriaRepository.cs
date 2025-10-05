@@ -9,11 +9,13 @@ namespace LojaVirtual.Repositories
 {
     public class CategoriaRepository : ICategoriaRepository
     {
-        const int _registroPorPagina = 10;
+        //const int _registroPorPagina = 10;
+        private IConfiguration _config; //appsettings.json
         LojaVirtualContext _banco;
-        public CategoriaRepository(LojaVirtualContext context) 
+        public CategoriaRepository(LojaVirtualContext context, IConfiguration configuration) 
         {
             _banco = context;
+            _config = configuration;
         }
         public void Atualizar(Categoria categoria)
         {
@@ -41,8 +43,9 @@ namespace LojaVirtual.Repositories
 
         public IPagedList<Categoria> ObterTodasCategorias(int? pagina)
         {
+            int RegistroPorPagina = _config.GetValue<int>("RegistroPorPagina");
             int NumeroPagina = pagina ?? 1;
-            return _banco.Categorias.Include(a=>a.CategoriaPai).ToPagedList<Categoria>(NumeroPagina, _registroPorPagina);
+            return _banco.Categorias.Include(a=>a.CategoriaPai).ToPagedList<Categoria>(NumeroPagina, RegistroPorPagina);
         }
 
         public IEnumerable<Categoria> ObterTodasCategorias()

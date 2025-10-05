@@ -15,12 +15,14 @@ namespace LojaVirtual.Controllers
         private IClienteRepository _repositoryCliente;
         private INewsletterRepository _newsletterRepository;
         private LoginCliente _loginCliente;
+        private GerenciarEmail _gerenciarEmail;
 
-        public HomeController(IClienteRepository repository, INewsletterRepository newsletterRepository, LoginCliente loginCliente)
+        public HomeController(IClienteRepository repository, INewsletterRepository newsletterRepository, LoginCliente loginCliente, GerenciarEmail gerenciarEmail)
         {
             _repositoryCliente = repository;
             _newsletterRepository = newsletterRepository;
             _loginCliente = loginCliente;
+            _gerenciarEmail = gerenciarEmail;
         }
         [HttpGet]
         public IActionResult Index()
@@ -70,7 +72,7 @@ namespace LojaVirtual.Controllers
 
                 if (isValid)
                 {
-                    ContatoEmail.EnviarContatoPorEmail(contato);
+                    _gerenciarEmail.EnviarContatoPorEmail(contato);
                     /*
                     return new ContentResult() { Content = string.Format("Dados recebidos <br/> Nome: {0} <br/> Email: {1} <br/> Texto: {2}",contato.Nome, contato.Email,contato.Texto), ContentType = "text/html"
                     };*/

@@ -1,4 +1,5 @@
 using LojaVirtual.Database;
+using LojaVirtual.Libraries.Email;
 using LojaVirtual.Libraries.Login;
 using LojaVirtual.Libraries.Sessao;
 using LojaVirtual.Repositories;
@@ -6,6 +7,9 @@ using LojaVirtual.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
+using System.Configuration;
+using System.Net;
+using System.Net.Mail;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +24,24 @@ builder.Services.AddScoped<INewsletterRepository, NewsletterRepository>();
 builder.Services.AddScoped<IColaboradorRepository, ColaboradorRepository>();
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 
+//SMTP -- config envio email
+builder.Services.AddScoped<SmtpClient>(options =>
+{
+    SmtpClient smtp = new SmtpClient()
+    {
+        //config para obter email/senha do site a partir do appsettings.json
+        Host = builder.Configuration.GetValue<string>("Email:ServerSMTP"),
+        Port = builder.Configuration.GetValue<int>("Email:ServerPort"),
+        UseDefaultCredentials = false,
+        //conta e senha gmail
+        Credentials = new NetworkCredential(builder.Configuration.GetValue<string>("Email:UserName"), builder.Configuration.GetValue<string>("Email:Password")),
+        //conexao segura
+        EnableSsl = true,
+    };
+    return smtp;
+});
+builder.Services.AddScoped<GerenciarEmail>();
+
 //session - configuracao
 builder.Services.AddHttpContextAccessor();
 
@@ -32,6 +54,7 @@ builder.Services.AddScoped<Sessao>();
 builder.Services.AddScoped<LoginCliente>();
 builder.Services.AddScoped<LoginColaborador>();
 
+//banco
 string connection = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=LojaVirtual;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
 builder.Services.AddDbContext<LojaVirtualContext>(options => options.UseSqlServer(connection));

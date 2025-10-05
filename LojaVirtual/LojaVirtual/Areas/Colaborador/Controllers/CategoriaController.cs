@@ -1,4 +1,5 @@
 ﻿using LojaVirtual.Libraries.Filtro;
+using LojaVirtual.Libraries.Lang;
 using LojaVirtual.Models;
 using LojaVirtual.Repositories.Interfaces;
 using Microsoft.ApplicationInsights.Extensibility.Implementation;
@@ -34,13 +35,13 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
         [HttpPost]
         public IActionResult Cadastrar([FromForm]Categoria categoria)
         {
-            
+            //categoria.CategoriaPai = _categoriaRepository.ObterCategoria(categoria.Id);
             //TODO implementar
             if (!ModelState.IsValid)
             {
                 _categoriaRepository.Cadastrar(categoria);
 
-                TempData["MSG_S"] = "Registro salvo com sucesso";
+                TempData["MSG_S"] = Mensagem.MSG_S001;
 
                 return RedirectToAction(nameof(Index));
             }
@@ -62,7 +63,7 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
             {
                 _categoriaRepository.Atualizar(categoria);
 
-                TempData["MSG_S"] = "Registro salvo com sucesso";
+                TempData["MSG_S"] = Mensagem.MSG_S001;
 
                 return RedirectToAction(nameof(Index));
             }
@@ -75,7 +76,7 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
         public IActionResult Excluir(int id)
         {
             _categoriaRepository.Excluir(id);
-            TempData["MSG_S"] = "Registro excluído com sucesso";
+            TempData["MSG_S"] = Mensagem.MSG_S002;
             return RedirectToAction(nameof(Index));
         }
     }
